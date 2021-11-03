@@ -1,7 +1,7 @@
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Footer from './components/Footer';
 import Topbar from './components/Topbar';
 import DiscoverFeature from './features/Discover/index';
-import Footer from './components/Footer';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme();
 
