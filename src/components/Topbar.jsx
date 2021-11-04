@@ -33,16 +33,18 @@ const useStyles = makeStyles({
     left: '93px',
     objectFit: 'cover',
     objectPosition: 'center',
+    cursor: 'pointer',
   },
 
   brand: {
-    padding: '4px 32px 4px 40px',
+    margin: '4px 32px 4px 40px',
     fontFamily: 'Poppins ,sans-serif',
     fontWeight: 600,
     fontSize: '24px',
     lineHeight: '32px',
     letterSpacing: '-2%',
     color: '#F4F5F6',
+    cursor: 'pointer',
   },
 
   divider: {
@@ -59,12 +61,13 @@ const useStyles = makeStyles({
     justifyContent: 'center',
 
     '& > li': {
-      paddingLeft: '32px',
+      marginLeft: '32px',
       fontWeight: 'bold',
       textAlign: 'center',
       fontSize: '14px',
       lineHeight: '16px',
       color: '#777E91',
+      cursor: 'pointer',
     },
   },
 
@@ -74,6 +77,7 @@ const useStyles = makeStyles({
     margin: '0 35px',
     display: 'flex',
     alignItems: 'center',
+    cursor: 'pointer',
 
     '& > span': {
       position: 'absolute',
@@ -107,6 +111,7 @@ const useStyles = makeStyles({
 
     '& > svg': {
       color: '#777E90',
+      cursor: 'pointer',
     },
   },
 });
@@ -134,7 +139,7 @@ function Topbar() {
           <NotificationsNoneIcon />
           <span></span>
         </div>
-        <div style={{ paddingRight: '12px' }}>
+        <div style={{ marginRight: '12px' }}>
           <RoundedButton label="Upload" primary={true} />
         </div>
         <RoundedButton label="Connect Wallet" />
