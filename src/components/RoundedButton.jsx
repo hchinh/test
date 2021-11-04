@@ -9,6 +9,9 @@ RoundedButton.propTypes = {
 
 const useStyles = makeStyles({
   root: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     padding: '10px 16px',
     borderRadius: '90px',
     cursor: 'pointer',
@@ -16,6 +19,9 @@ const useStyles = makeStyles({
   },
 
   active: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     padding: '12px 16px',
     cursor: 'pointer',
     borderRadius: '90px',
@@ -24,10 +30,15 @@ const useStyles = makeStyles({
   },
 });
 
-function RoundedButton({ label, primary }) {
+function RoundedButton({ label, primary, icon }) {
   const classes = useStyles();
 
-  return <span className={primary ? classes.active : classes.root}>{label}</span>;
+  return (
+    <span className={primary ? classes.active : classes.root}>
+      {label}
+      {icon}
+    </span>
+  );
 }
 
 export default RoundedButton;

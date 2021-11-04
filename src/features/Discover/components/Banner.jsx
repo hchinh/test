@@ -6,7 +6,6 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexFlow: 'column nowrap',
-    justifyContent: 'flex-end',
     alignItems: 'center',
   },
 
