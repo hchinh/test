@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexFlow: 'column nowrap',
-    padding: '130px 160px',
+    padding: '128px 160px',
   },
 
   title: {

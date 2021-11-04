@@ -38,11 +38,11 @@ const useStyles = makeStyles({
 
   brand: {
     margin: '4px 32px 4px 40px',
-    fontFamily: 'Poppins ,sans-serif',
+    fontFamily: 'Poppins',
     fontWeight: 600,
     fontSize: '24px',
     lineHeight: '32px',
-    letterSpacing: '-2%',
+    letterSpacing: '-0.02em',
     color: '#F4F5F6',
     cursor: 'pointer',
   },
