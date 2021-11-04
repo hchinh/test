@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import { Box } from '@mui/system';
 import React from 'react';
 import DiscoverSort from './DiscoverSort';
 import FilterByCategory from './FilterByCategory';
@@ -20,11 +21,11 @@ function DiscoverFilters() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Box className={classes.root}>
       <FilterByCategory />
-      <div className={classes.divider}></div>
+      <Box className={classes.divider}></Box>
       <DiscoverSort />
-    </div>
+    </Box>
   );
 }
 

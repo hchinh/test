@@ -131,17 +131,17 @@ function Topbar() {
         </ul>
       </Box>
       <Box className={classes.right}>
-        <div className={classes.search_box}>
+        <Box className={classes.search_box}>
           <input type="text" placeholder="Search" />
           <SearchIcon />
-        </div>
-        <div className={classes.icon}>
+        </Box>
+        <Box className={classes.icon}>
           <NotificationsNoneIcon />
           <span></span>
-        </div>
-        <div style={{ marginRight: '12px' }}>
+        </Box>
+        <Box style={{ marginRight: '12px' }}>
           <RoundedButton label="Upload" primary={true} />
-        </div>
+        </Box>
         <RoundedButton label="Connect Wallet" />
       </Box>
     </Box>

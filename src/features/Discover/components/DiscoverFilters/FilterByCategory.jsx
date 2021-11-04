@@ -1,5 +1,6 @@
 import { HighlightOffOutlined } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
+import { Box } from '@mui/system';
 import Dropdown from 'components/Dropdown';
 import RoundedButton from 'components/RoundedButton';
 import React from 'react';
@@ -16,6 +17,7 @@ const useStyles = makeStyles({
   left: {
     position: 'absolute',
     left: 0,
+    width: '180px',
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
@@ -58,10 +60,10 @@ function FilterByCategory() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.left}>
+    <Box className={classes.root}>
+      <Box className={classes.left}>
         <Dropdown label="Recently added" />
-      </div>
+      </Box>
       <ul className={classes.menu}>
         <li>All items</li>
         <li>Art</li>
@@ -70,10 +72,10 @@ function FilterByCategory() {
         <li>Music</li>
         <li>Video</li>
       </ul>
-      <div className={classes.right}>
+      <Box className={classes.right}>
         <RoundedButton label="Filter" primary={true} icon={<HighlightOffOutlined />} />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

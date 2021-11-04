@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     padding: '6px 8px 6px 16px',
     border: '2px solid #353945',
     borderRadius: '12px',
-    width: '180px',
+    width: '100%',
   },
 
   label: {

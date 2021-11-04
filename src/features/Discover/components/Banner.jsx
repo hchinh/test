@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import { Box } from '@mui/system';
 import RoundedButton from 'components/RoundedButton';
 import React from 'react';
 
@@ -38,13 +39,13 @@ function Banner() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.title}>
+    <Box className={classes.root}>
+      <Box className={classes.title}>
         <p>Create, Explore & Collect digital art nfts</p>
         <h1>The new creative economy.</h1>
-      </div>
+      </Box>
       <RoundedButton label="Start Your Search" />
-    </div>
+    </Box>
   );
 }
 

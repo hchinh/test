@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import { Box } from '@mui/system';
 import React from 'react';
 import DiscoverFilters from '../DiscoverFilters/DiscoverFilters';
 import DiscoverList from './DiscoverList';
@@ -22,11 +23,11 @@ function Discover({ vehicleList = [] }) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Box className={classes.root}>
       <h1 className={classes.title}>Discover</h1>
       <DiscoverFilters />
       <DiscoverList vehicleList={vehicleList} />
-    </div>
+    </Box>
   );
 }
 
