@@ -8,12 +8,13 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexFlow: 'column nowrap',
+    marginBottom: '32px',
   },
 
   divider: {
     height: '1px',
     backgroundColor: '#353945',
-    margin: '32px 0',
+    margin: '42px 0 32px 0',
   },
 });
 
