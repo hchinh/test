@@ -7,6 +7,12 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexFlow: 'column nowrap',
+    cursor: 'pointer',
+    transition: 'transform ease 0.2s',
+
+    '&:hover': {
+      transform: 'scale(1.03)',
+    },
   },
 
   thumbnail: {

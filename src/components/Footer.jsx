@@ -83,6 +83,7 @@ const useStyles = makeStyles({
 
     '& > ul': {
       marginTop: '40px',
+      transition: 'transform ease 0.3s',
     },
 
     '& > ul > li': {
@@ -91,6 +92,11 @@ const useStyles = makeStyles({
       lineHeight: '16px',
       color: '#777E90',
       cursor: 'pointer',
+    },
+
+    '& > ul > li:hover': {
+      color: '#fcfcfd',
+      transform: 'scale(1.03)',
     },
 
     '& > ul > li:not(:last-child)': {

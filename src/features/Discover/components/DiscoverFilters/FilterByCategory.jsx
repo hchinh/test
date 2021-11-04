@@ -34,6 +34,7 @@ const useStyles = makeStyles({
   menu: {
     display: 'flex',
     flexFlow: 'row nowrap',
+    transition: 'transform ease 0.3s',
 
     '& > li': {
       color: '#777E90',
@@ -52,6 +53,10 @@ const useStyles = makeStyles({
       backgroundColor: '#353945',
       color: '#FCFCFD',
       borderRadius: '100px',
+    },
+    '& > li:not(:first-child):hover': {
+      color: '#fcfcfd',
+      transform: 'scale(1.03)',
     },
   },
 });

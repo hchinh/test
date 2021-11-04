@@ -59,6 +59,7 @@ const useStyles = makeStyles({
     flexFlow: 'row nowrap',
     alignItems: 'center',
     justifyContent: 'center',
+    transition: 'transform ease 0.3s',
 
     '& > li': {
       marginLeft: '32px',
@@ -68,6 +69,11 @@ const useStyles = makeStyles({
       lineHeight: '16px',
       color: '#777E91',
       cursor: 'pointer',
+    },
+
+    '& > li:hover': {
+      color: '#fcfcfd',
+      transform: 'scale(1.03)',
     },
   },
 
