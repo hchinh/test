@@ -2,7 +2,6 @@ import { ArrowRightAlt } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import React from 'react';
-import RoundedButton from './RoundedButton';
 
 const useStyles = makeStyles({
   root: {
@@ -132,7 +131,36 @@ const useStyles = makeStyles({
 
   email: {
     marginTop: '24px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '12px 10px 12px 14px',
+    border: '2px solid #353945',
+    borderRadius: '90px',
     color: '#777E90',
+
+    '& > input': {
+      fontFamily: 'Poppins',
+      fontSize: '14px',
+      backgroundColor: 'transparent',
+      border: 'none',
+      outline: 'none',
+      fontWeight: 400,
+      lineHeight: '24px',
+      color: '#777E90',
+    },
+  },
+
+  btn: {
+    width: '32px',
+    height: '32px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#3772FF',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    color: ' #FCFCFD',
   },
 });
 
@@ -178,7 +206,10 @@ function Footer() {
             course and resource.
           </p>
           <Box className={classes.email}>
-            <RoundedButton label="Enter your email" icon={<ArrowRightAlt />} />
+            <input type="text" placeholder="Enter your email" />
+            <Box className={classes.btn}>
+              <ArrowRightAlt />
+            </Box>
           </Box>
         </Box>
       </Box>

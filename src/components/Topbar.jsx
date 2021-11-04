@@ -97,20 +97,20 @@ const useStyles = makeStyles({
     padding: '10px 12px 10px 16px',
     border: '2px solid #353945',
     borderRadius: '8px',
+    color: '#777E90',
 
     '& > input': {
       fontFamily: 'Poppins',
       fontSize: '12px',
-      color: '#777E90',
       backgroundColor: 'transparent',
       border: 'none',
       outline: 'none',
       fontWeight: 400,
       lineHeight: '20px',
+      color: '#777E90',
     },
 
     '& > svg': {
-      color: '#777E90',
       cursor: 'pointer',
     },
   },
